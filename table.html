@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Table</title>
+</head>
+<body>
+
+    <h1>Belajar Table</h1>
+    Tag table berguna untuk membuat table. Ini adalah atribu table tag:
+ 
+   <table style="border: 1px solid black;">
+    <colgroup>  <!--ini adalah materi colgruop-->
+        <col span="2" style="background-color: rgb(164, 153, 136);">
+        <col style="background-color: rgb(191, 199, 143);">
+    </colgroup>
+
+    <thead>
+        <tr>
+            <th colspan="2">Nama </th> <!--ini adalah penggunaan colspan-->
+            <th>Nilai</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Rixie</td>
+            <td>Demitri</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td>Marvel</td>
+            <td>Lourenzo</td>
+            <td>90</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td rowspan="2">Total</td>  <!--ini adalah penggunaan rowspam-->
+            <td>Total</td>
+            <td>170</td>
+        </tr>
+        <tr>
+            <td>rata rata</td>
+            <td>85</td>
+        </tr>
+    </tfoot>
+   </table>
+    
+</body>
+</html>
