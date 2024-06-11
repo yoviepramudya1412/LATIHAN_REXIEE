@@ -1,0 +1,305 @@
+    /*
+                        "[CSS DASAR]"
+       - CSS Adalah singkatan dari Cascading Style Sheet. hTML digunakan untuk
+    membuat struktur konten web secara semantik, dan CSS digunakan untuk
+    memberi style atau gaya dan layout atau tata letak pada konten html. Contohnya,
+    di CSS kita bisa mengubah font, color, size, dan lain".
+        Aturan dalam css harus menyebutkan, property : value.
+    
+       - Ada 3 cara dalam menambahkan CSS dalam HTML, yaitu:
+    1. cara internal, adalah CSS disimpan di file yang sama dgn HTML.
+    Yaitu dgn menggunakan tag style.
+    2. Cara external, adaalah CSS disimpan di file yg bebrbeda dgn HTML.
+    yaitu dgn menggunakan tag link. Saat membuat web ini akan sering digunakan.
+    3. Cara inline dimana CSS disimpan dalam atribut style pada tag html.
+
+       - Selain memilih menggunakan element HTML tag, dapat juga memilih element
+    menggunakan ID di CSS. Untuk menggunkan ID, perlu menggunakan # di awal nama ID.
+    ID dipakai untuk satu element khusus, id harus unik atau berbeda.
+
+       - Class adalah atribut yg dignakan untuk mendefinisikan sekelompok
+    element HTML untuk menerapkan dan pemformatan unik pada element tersebut
+    dgn CSS. Class digunakan ke beberapa elemen dihalaman situs web atau tidak unik.
+    Class dilambangkan dgn titik.
+    - Multiple class adalah nilai atribut class bisa menggunakan beberapa nilai,
+    caranya bisa menggunakan spasi sbg pemisah lalu sbtkan nama classnya.
+
+                
+                    "[ SELECTOR ]"
+       - Selector adaalah mekanisme dalam memilih
+    dan menargetkan elemen" HTML tertentu dalam dokumen web untuk diberi
+    style menggunakan CSS.
+
+        [Simple selector] adalah selector unutk memilih element berdasarkan nama tag, 
+    #id atau .class. Jika ingin menggunakan selector untuk beberapa elemen, bisa gunakan koma
+    sebagai pemisah.
+        1. Type selector melakukan seleksi element berdasarkan tag html. Contoh h1
+        2. ID selector melakukan seleksi element berdasarkan id. contoh #judul
+        3. class selector melakukan seleksi element berdasrkan nama class. Contoh .cth
+        4. Selector List melakukan beberapa seleksi beberapa element sekaligus menggunukan
+        pemisah koma.
+
+        [Combinator Selector] adalah sesuatu yg menjelaskan relaasi antar selctor. Terdapat 4
+     combinator selector yg dpt di gunakan, yaitu:
+        1. descendant selector (space) adalah selector untuk memilih elemen anak dari elemen 
+         yang dipilih. artinya semua elemen yg berada di dalam selector yg dipilih.
+        2. child selector (>) adalah selector untuk memilih child/anak nya langsung dari elemen
+        yang di pilih. artinya hanya selector yg berada langsung dalam element yg di sebutkan.
+        3. adjacent sibling selector (+) adalah selector untuk memilih element yg dipillih.
+        Harus memiliki parent element yg sama. artinya hanya elemen yg berada langsung
+        dibawah selector.
+        4. general sibling selector (~) adalah selector untuk memilih element seluruh elemen saudara
+        dari element yg dipilih, dimana harus memiliki parent element yg sama. artinya semua elemen
+        setelah selector.
+        
+        [Attribute selectors] CSS mendukung atribut yg terdapat di tag HTMl. Terdapat banyak cara dalam
+        menggunakan atribut selector, yaitu:
+        1. CSS [Attribute] Selector, Mengseleksi elemen yg berada dalam kurung kotak [].
+        Contohnya a[target] artinya kita mengseleksi semua element a yg
+        memilki target.
+        
+        2. CSS [Attbute="value"] Selector, Mengseleksi element yg berada dalam kurung kotak [] dan memiliki value.
+        Contohnya a[target="_blank"] artiny memilih semua element a yg memiliki atribut target dgn value _blank.
+
+        3. CSS [Attribute~="value"] Selector, Mengseleksi element yg berada dalam kurung kotak [], memiliki atribut
+        yang terdapat dalam value.
+        Contohnya p[tittle~="belajar"] artinya memilih semua element p yg memiliki atribut yg terdapat dalam kata belajar.
+
+        4. CSS [Attribute|="value"] Selector, Mengseleksi element yg berada dalam kurung kotak [], yg memiliki atribut
+        yg memiliki value atau yg diikuti karakter strip (-)
+        Contohnya, p[tittle|="belajar"] artinya memilih semua element p yg memiliki atribut yg tittle yg memiliki value
+        "belaja" atau "belajar" yg diikuti tanda strip (-).
+
+        5. CSS [attribute^="value"] Selector, mengseleksi semua element yg berada di dalam kurung kotak [], yg diawali dgn
+        value yang sama.
+        Contoh, p[title^="belajar"] artinya memilih semua element p yg memiliki atribut title yg memiliki value diawali
+        dengan kata "belajar".
+
+        6. CSS [attribute$="value"] Selector, mengseleksi semua element yg berada di dalam kurung kotak [], yg diakhir dgn
+        value yang sama.
+        Contoh, p[title$="belajar"] artinya memilih semua element p yg memiliki atribut title yg memiliki value diakhir
+        dengan kata "belajar".
+
+        7. CSS [attribute*="value"] Selector, mengseleksi semua element yg berada di dalam kurung kotak [], yg menggunakan
+        karakter yang sama.
+        Contoh, p[title*="belajar"] artinya memilih semua element p yg memiliki atribut title yg menggunakan karakter
+        "belajar".
+
+        8. Attribute selector tanpa tag, saat menggunakan atribut selector sebenarnya tidak wajib menggunakan tag. Jadi bisa
+        langdung menggunakan atribut selector. Attribute selector bisa digunakan pada class atau ID.
+
+                    [COLOR]
+    - Color merupapkan rules di css untuk mengubah warna, biasa digunakan pada text. Format color dapat menggunakan color name,
+    HEX, RGB, dan HSL.
+
+                    [TEXT]
+    - CSS dapat mengubah properties atau format pada text.
+        1. Text Alignment, digunakan untuk mengubah rata tulisan, bisa menggunakan text-align, untuk memilihi beberapa nilai yaitu:
+            -left untuk ke kiri
+            -right untuk ke kanan
+            -center untuk ke tengah
+            -justify untuk ke justifikasi.
+        2. Text Decoration, digunakan untuk menambahkan garis dekorasi ke text, bisa menggunakan text-decoration, untuk memilihi beberapa nilai yaitu:
+            -Text-decoration-line untuk garis
+                -underline untuk mencetak garis dibawah.
+                -overline untuk mencetak garis diatas.
+                -line-through untuk mencetak garis tengah
+                -blink untuk mencetak garis blink.
+            -Text-decoration-color untuk warna
+            -Text-decoration-tickness untuk ketebalan garis.
+            -Text-decoration-style untuk garis style.
+                -solid untuk garis garis lurus.
+                -dashed untuk garis garis strip di bawah
+                -dotted untuk garis garis titik-titik
+                -double untuk garis garid lurus dua kali.
+                -wavy untuk garis bergelombang
+        3. Text transformation, digunakan untuk mengubah uppercase dan lowercase untuk text, bisa gunakan text-transformation, untuk memeilih bebrapa nilai, yaitu:
+            -capitalize itu huruf pertamanya adalah huruf besar.
+            -uppercase itu semua hurufnya besar.
+            -lowercase itu semua hurufnya kecil.
+            -none itu defaultnya.
+        4. Text Spacing, digunakan untuk mengatur jarak dalam text.
+            -Aturan text-indent, digunakan untuk mengatur jarak text di awal text.
+            -Aturan letter-spacing, digunakan untuk mengatur jarak text antar huruf
+            -Aturan line-height, digunakan untuk mengatur jarak antar baris.
+            -Aturan word-spacing, digunakan untuk mengatur jarak text antar kata.
+            -Aturan white-space, digunakan untuk mengatur bagaimana whitespace ditampilkan.
+        5.Text Shadow, digunakan untuk menambahkan efek bayangan pada text, bisa gunakan text-shadow untuk memilih beberap nilai, yaitu:
+        -Text-shadow: 1px 1px 2px white. artinya offsite-x nya horizontal, offsite-y nya vertikal, blur-radius, dan color nya.
+        -Text-shadow: 1px 1px 2px rgba(0,0,0,0.5). artinya offsite-x nya horizontal, offsite-y nya vertikal, blur-radius, dan color nya.
+
+                    [FONT]
+    - Tiap web browser memiliki default fontnya masing masing. Agar tampilan web konsistent ada baiknya menggunakan font yang sama.
+    Untuk menggunakan font yang berbeda, bisa menggunakan font-family. Font-family merupakan sebuah property yang digunakan untuk menentukan font yang digunakan.
+        -font-family untuk mengubah jenis font nya.
+        -font-size ini adalah ukuran fontnya.
+        -font-stretch ini adalah stretch fontnya
+        -font-style ini adalah style fontnya
+            >italic hurufnya miring
+            >oblique hurufnya miring bisa diatur kemiringannya berapa.
+        -font-variant ini adalah variant fontnya
+        -font-weight ini adalah untuk mengatur ketebalan fontnya
+            >bold untuk ketebalan
+            >lighter lebih kurus
+            >bolder lebih tebal
+        -font-height ini adalah tinggi fontnya
+    cara pengunaannya bisa digabungkan, misalnya:
+        # font-size font-family
+          font: 1.2em "fira-sans", sans-serif;
+        # font-size/line-height font-family
+          font: 1.2em "fira-sans", sans-serif;
+
+                    [BACKGROUND]
+    - CSS dapat mengubah mengubah latar belakang dari tiap element di html. Bisa gunakan property background:
+        > Background color adalah yg paling sederhana, yaitu mengubah element menjadi color. Bisa gunakan property background-color untuk mengubah background
+         mennggunakan color.
+
+                    [BOX MODEL]
+    - Biasanya digunakan untuk mengatur tata letak atau layout pada element. Setiap element di html, memiliki Box yg terdiri dari content, padding, border, dan margin.
+        > content, yaitu isi dari element.
+        > padding, yaitu arena trnsparan antara content dan border. Untuk menggunkan padding dapt menggunakana Property padding, yaitu:
+            -padding-right
+            -padding-left
+            -padding-bottom
+            -padding-top
+
+        > border, yaitu kotak yg mengelilingi content.
+            -boreder-color
+            -border-width 
+
+            -border-style : none, dotted, imset, dashed solid, dashed double none, dashed groove none.
+           
+        > margin, yaitu arena transparant paling luar setelah border.
+            -marrgin-top
+            -marrgin-bottom
+            -margin-right
+            -margin-left
+
+        > Size digunakan untuk mengubah ukuran dari tipe element menggunakan height untuk tinggi dan widht untuk lebar.
+
+                [Debug dengan Web Browser]
+    - Bisa digunakan untuk menampilkan debug pada web browser. Untuk menampilkan debug, bisa menggunakan insert.
+
+                [Min and Max Size]
+    - Bisa digunakan untuk mengatur ukuran minimum dan maksimum dari element, agar menjaga element tidak terlalu kecil dan tidak terlalu besar.
+        > Min Size bisa gunakan property min-height untuk tinggi minimal, dan min-width untuk minimal lebar.
+        > Max Size bisa gunakan property max-height untuk tinggi maksimal, dan max-width untuk maksimal lebar.
+
+                [Outlline]
+    - kegunaan nya sam seperti Border, namun Outline berada dalam margin, sedangkan border berada di luar merign.
+        > outline-color
+        > outline-style
+        > outline widht
+
+                [Bacground Image]
+    - Untuk menggunakan image sebagai background, bisa gunakan property sebagai beritkut: 
+        > background-image untuk menggunakan image sebagai background dengan memesukan url imagenya.
+        > background-repeat untuk mengulamg gambar sebagai background.
+        > background-position untuk mengatur posisi gambar
+        > background-size untuk mengubah ukuran background gambar
+        > background-attachment 
+        > background-origin
+        > background-clip
+        > background-color
+    -Gradiendt, untuk menambakan warna gradian pada background. Beberapa pilihan gradient, yaitu:
+        > linear-gradient
+        > radial-gradient
+        > conic-gradient
+        > repeating-linear-gradient
+
+                [opacity]
+    - Digunakan untuk transparansi. Perlu di perhatikan, jika menggunakan opacity semua element, baik content atau background akan berubah menjadi transparan.
+    
+                [Writing Mode]
+    - Digunakan untuk menentukan teks apakah vertikal atau horizontal. Dapatkan menggunakan writing-mode, beberapa property yg dapat digunakan yaitu:
+        > horizontal-tb
+        > vertical-lr
+        > vertical-rl
+
+                [Overflow]
+    - Overflow adalah kejadian dimana konten text melebihi ukuran dari box element. Bisa gunakan overflow, dengan property sebagai berikut:
+        > visiable
+        > hidden
+        > clip
+        > scroll
+        > auto
+
+                [Pseuodo-Element Selector]
+    - Pseuodo-Element Selector adalah kata kunci untuk menambah selector ke bagian tertentu dari element yg terseleksi. Saat memilih pseudo element harus menggunkan
+    tanda pemisah :: (titik dua sebanyak dua kali).
+                [Pseudo-Classes Selector]
+    - Pseudo-Classes Selector adalah kata kunci yang ditambahkan ke selector yg merepresentasikan state/keadaan tertentu dari element yg diseleksi.
+    Untuk menambahkan psuedo-classes bisa gunakan : (titik dua) satu kali.
+    
+                [Link]
+    - Link memilki banyak sekali pseudo-classes yg bisa di gunakan untuk mengubah tampilan link pada state tertentu.
+
+                [List]
+    - CSS memiliki  beberapa property yg bisa di gunakan untuk list. Beberapa list style yg dapat digunakan:
+        > list-style-type:  -space-counters;
+                            -disc;
+                            -circle;
+                            -emoji
+                            -imagz
+        > list-style-position:  -inside;
+                                -outside;
+        Untuk shortcut bisa gunakan list-style:valuenya apa
+
+                [Table]
+    - Jika ingin mengatur border pada table bisa gunakan boarder pada table tr, th, td, dan lain lain.
+        > border-collapse, digunakan untuk menghilangkan jarak border, bisa gunakan: 
+            -collapse
+            -separate
+        > table-size unruk mengatur tinggi lebarnya table, bisa gunakan:
+            - widht, untuk lebar
+            - height, untuk tinggi
+        > table-alignment digunakan untuk mengatur posisi text pada table, bisa gunakan property:
+            - text-align
+            - writing-mode
+            
+                [Form]
+    - Saat membuat form, element input yg dibuat bisa diatur menggunakan Box model di CSS. selain itu khusus form, terdapat pseudo-classes yg dikhhususkan untuk input form.
+
+                [Content]
+    - Adalah property yg bisa digunakan untuk mengubah isi dari element. Untuk mengubah isi element menggunakan property content, bisa menggunakan
+    content image, sedangkan untuk text, bisa lakukan di pseuedo-element.
+    
+                [Counter]
+    - Ini dibuat untuk penomoran.
+        > conter-set untuk membuat counter, property yg bisa digunakan yaitu:
+        > counter-incerment untuk menaikan counter
+        > counter-reset untuk melakukan reset counter
+        > function-counter untuk menemukan isi counternyz
+
+                [Filter]
+    - Css bisa digunkan untuk menambah filter di elemeny yg dipilih. Bisa gunakan property filter:
+
+                [Import]
+    - Import adalah property yang digunakan untuk mengimport css dari file yang ada di dalam folder css.
+
+                [Cascade]
+    - Cascade adalah logika bagaimana web browser mengumpulkan property CSS dari berbagai sumber sebelum diterapkan ke element yg di pilih. Web broswer akan mengambil sumber property CSS dari tiga sumber, Yaitu:
+    User Agent, Author, dan User.
+        > User Agent Stylesheet atau Browser, biasanya memiliki nilai awal untuk stylesheet. Tiap user biasanya berbeda. Salah satu nilai coontoh yg banyak dilakukan programer adalah melakukan reset ke nilai kosong.
+
+        > Author Stylesheet, Untuk menggunkan stylesheet buatan org lain. contoh yg populer adalah bootstrap atau tailwindCSS.
+
+        > User Stylesheet, adalah stylesheet buatan sendiri, dibuat untuk mengubah stylesheet yg sudah digunakan bail dari user agent atau author.
+
+                [Casecade Order]
+    - penggabungan semua property css untuk element menggunakan urutan sbb:
+        > User Agent Stylesheet
+        > Author Stylesheet
+        > User Stylesheet
+    yg digunakan adalah yg terakhir dibuat atau digunakan.
+
+                [!importan]
+    - jika ingin membuat aturan menjadi penting tidak boleh digantikan oleh aturan lain, maka bisa menambahkan
+    (!important) pada aturan tsb.
+
+                [Layer]
+    - Alternatif lain yg lebih flexibel dari !important adalah menggunkan @layer
+        Layer adalah fitur di dalam CSS cascade dimsns bisa membuat layer atau seperti tumpukan, dimana posisi layer bisa kita urutkan sesuai dgn yg diinginkan, sesuai dari yg penting hingga yg tidak terlalu penting.
+        dgn begitu bisa mengubah ngubah tanpa harus menggunakan !important lagi.
+
+    */

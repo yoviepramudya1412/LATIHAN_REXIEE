@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atribute Selector</title>
+</head>
+<style>
+    a[target] { /* CSS [Attribute] Selector*/
+        color: rgb(255, 145, 0);
+    }
+    a[target="_blank"] { /* CSS [Attribute="value"] Selector*/
+        color: rgb(65, 225, 108);
+    }
+    p[title~="belajar"] { /*CSS [Attribute~="value"] Selector*/
+        color: aqua
+    }
+    p[title|="bljr"] { /*CSS [Attribute|="value"] Selector*/
+        color: rgb(95, 167, 24);
+    }
+
+    p[title^="contoh"] { /*CSS [attribute^="value"] Selector*/
+        color: coral;
+    }
+
+    p[title$="kata"] { /*CSS [attribute$="value"] Selector*/
+        color: rgb(209, 174, 161);
+    }
+
+    p[title*="cth"] { /*CSS [attribute*="value"] Selector*/
+        color: rgb(44, 202, 171);
+    }
+
+    [title="spn"] { /*attributte tanpa selector*/
+        color: rosybrown;
+    }
+
+</style>
+<body>
+    <a href="" target="">contoh 1</a> <!-- CSS [Attribute] Selector-->
+    <a href="" target="_blank">contoh 2</a><!--CSS [Attribute="value"] Selector-->
+    <a href="" target="_self"> contoh 3</a>
+    <a href="">Contoh 4</a>
+
+    <p title="belajar proram">Isi artikel</p> <!--CSS [Attribute~="value"] Selector-->
+
+    <p title="bljr">Isi artikel</p><!--CSS [Attribute|="value"] Selector-->
+    <p title="bljr-program">Isi artikel</p> 
+
+    <p title="contoh">isi artikel</p> <!--CSS [attribute^="value"] Selector-->
+    <p title="contoh-belajar">isi artikel</p>
+    <p title="contoh-belajar-program">isi artikel</p>
+
+    <p title="kata">Isi artikel</p> <!--CSS [attribute$="value"] Selector-->
+    <p title="ini-kata">Isi artikel</p>
+    <p title="isi-kata">isi artikel</p>
+
+    <p title="cth">Isi artikel</p> <!--CSS [attribute*="value"] Selector-->
+    <p title="ini-cth">Isi artikel</p>
+    <p title="ini-cth-programan">isi artikel</p>
+
+    <span title="spn">ini contoh span</span>
+    <p title="spn">isi artikel</p>
+    <p title="spn">isi artikel</p>
+
+</body>
+</html>

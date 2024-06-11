@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator</title>
+    <style>
+        div p { /*ini adalah  descendant selector (space)*/
+            color: #41954f;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        div > p { /*ini adalah child selector (>)*/
+            color: #2e868f;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        div + p { /*ini adalah adjacent sibling selector (+)*/
+            color: #7c48ad;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        h1 ~ p { /*ini adalah general sibling selector (~)*/
+            color: #a99a45;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <article>
+            <p>ini adalah descendant selector (space) semua yg berada dalam div</p>
+        </article>
+       
+         <p>ini adalah child selector (>) berada langsung di dalam div</p>
+    </div>
+
+    <p>ini adalah adjacent sibling selector (+) berada langsung dibawah div </p>
+
+    <h1></h1>
+         <p>ini adalah general sibling selector (~) semua yg berada setelah h1.</p>
+         <p>ini adalah general sibling selector (~) semua yg berada setelah h1.</p>
+ 
+
+</body>
+</html>
